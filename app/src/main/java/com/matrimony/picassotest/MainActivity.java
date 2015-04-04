@@ -13,6 +13,12 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+
 public class MainActivity extends ActionBarActivity {
 
 
@@ -22,10 +28,11 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imageView1 = (ImageView)findViewById(R.id.image_view_1);
+        //imageView1 = (ImageView)findViewById(R.id.image_view_1);
         imageView2 = (ImageView)findViewById(R.id.image_view_2);
 
         target = new Target(){
@@ -33,7 +40,18 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
 
-                imageView2.setImageBitmap(bitmap);
+                Log.v("BITMAP BEFORE",Integer.valueOf(bitmap.getRowBytes()).toString());
+
+                ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+                bitmap.compress(Bitmap.CompressFormat.JPEG,0,outputStream);
+
+                Bitmap decodedMap = BitmapFactory.decodeStream(new ByteArrayInputStream(outputStream.toByteArray()));
+
+                imageView2.setImageBitmap(decodedMap);
+
+                Log.v("BITMAP AFTER",Integer.valueOf(decodedMap.getRowBytes()).toString());
+
             }
 
             @Override
@@ -49,7 +67,7 @@ public class MainActivity extends ActionBarActivity {
             }
         };
 
-        Picasso.with(this).load(R.drawable.planet).into(imageView1);
+        //Picasso.with(this).load(R.drawable.planet).into(imageView1);
         loadImage();
     }
 
