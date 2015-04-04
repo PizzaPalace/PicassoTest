@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/syscon/Documents/workspace/PicassoTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/syscon/Documents/workspace/PicassoTest/app/build/intermediates/pre-dexed/debug/classes-51bb198f44173db40a67d32fa08c82d9a735c354.jar" />
+    </item>
+    <item
+        jar="/home/syscon/Documents/workspace/PicassoTest/app/libs/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/syscon/Documents/workspace/PicassoTest/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-a6e6cc9b27f6b8ea20207424c576f5aa65b4b106.jar" />
+    </item>
+    <item
+        jar="/home/syscon/Documents/workspace/PicassoTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/syscon/Documents/workspace/PicassoTest/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-4e724bfe9f80fe20acf0ee1e6d5b730d7307f116.jar" />
+    </item>
+    <item
+        jar="/home/syscon/Documents/workspace/PicassoTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/syscon/Documents/workspace/PicassoTest/app/build/intermediates/pre-dexed/debug/classes-65a30fc19f50498b06f561aef25644a588199424.jar" />
+    </item>
+    <item
+        jar="/home/syscon/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/syscon/Documents/workspace/PicassoTest/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-c35a08281ed0057833e96eef95d274da211842ac.jar" />
+    </item>
+
+</items>

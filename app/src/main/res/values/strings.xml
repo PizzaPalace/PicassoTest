@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="placeholder">Image Place Holder</string>
+    <string name="app_name">PicassoTest</string>
+
+
+    <string name="action_settings">Settings</string>
+</resources>
